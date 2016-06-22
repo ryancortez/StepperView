@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StepperView.h
 //  StepperView
 //
 //  Created by Ryan Cortez on 6/22/16.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StepperView.h"
 
-@interface ViewController : UIViewController
-
+@interface StepperView : UIView
 
 @end
-

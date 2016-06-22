@@ -16,12 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    StepperView *stepperView = [[StepperView alloc] init];
+    stepperView.frame = CGRectMake(0, 0, 200, 50);
+    stepperView.center = self.view.center;
+    [self.view addSubview:stepperView];
 }
 
 @end
