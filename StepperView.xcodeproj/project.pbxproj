@@ -14,6 +14,7 @@
 		9421A0C21D1B02C1004046C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9421A0C11D1B02C1004046C0 /* Assets.xcassets */; };
 		9421A0C51D1B02C1004046C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9421A0C31D1B02C1004046C0 /* LaunchScreen.storyboard */; };
 		9421A0D11D1B14F8004046C0 /* StepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9421A0D01D1B14F8004046C0 /* StepperView.m */; };
+		94A411B11D1B6C2B00D67F32 /* StepperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A411B01D1B6C2B00D67F32 /* StepperView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9421A0C61D1B02C1004046C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9421A0CF1D1B14F8004046C0 /* StepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperView.h; sourceTree = "<group>"; };
 		9421A0D01D1B14F8004046C0 /* StepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperView.m; sourceTree = "<group>"; };
+		94A411B01D1B6C2B00D67F32 /* StepperView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepperView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +63,9 @@
 		9421A0B41D1B02C1004046C0 /* StepperView */ = {
 			isa = PBXGroup;
 			children = (
-				9421A0B81D1B02C1004046C0 /* AppDelegate.h */,
-				9421A0CF1D1B14F8004046C0 /* StepperView.h */,
-				9421A0D01D1B14F8004046C0 /* StepperView.m */,
-				9421A0B91D1B02C1004046C0 /* AppDelegate.m */,
-				9421A0BB1D1B02C1004046C0 /* ViewController.h */,
-				9421A0BC1D1B02C1004046C0 /* ViewController.m */,
-				9421A0BE1D1B02C1004046C0 /* Main.storyboard */,
-				9421A0C11D1B02C1004046C0 /* Assets.xcassets */,
-				9421A0C31D1B02C1004046C0 /* LaunchScreen.storyboard */,
-				9421A0C61D1B02C1004046C0 /* Info.plist */,
+				94A411B31D1B6C4400D67F32 /* Controllers */,
+				94A411B41D1B6C4500D67F32 /* Models */,
+				94A411B21D1B6C4300D67F32 /* Views */,
 				9421A0B51D1B02C1004046C0 /* Supporting Files */,
 			);
 			path = StepperView;
@@ -79,9 +74,41 @@
 		9421A0B51D1B02C1004046C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9421A0C11D1B02C1004046C0 /* Assets.xcassets */,
+				9421A0C31D1B02C1004046C0 /* LaunchScreen.storyboard */,
+				9421A0C61D1B02C1004046C0 /* Info.plist */,
+				9421A0B81D1B02C1004046C0 /* AppDelegate.h */,
+				9421A0B91D1B02C1004046C0 /* AppDelegate.m */,
 				9421A0B61D1B02C1004046C0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94A411B21D1B6C4300D67F32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9421A0BE1D1B02C1004046C0 /* Main.storyboard */,
+				94A411B01D1B6C2B00D67F32 /* StepperView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		94A411B31D1B6C4400D67F32 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9421A0BB1D1B02C1004046C0 /* ViewController.h */,
+				9421A0BC1D1B02C1004046C0 /* ViewController.m */,
+				9421A0CF1D1B14F8004046C0 /* StepperView.h */,
+				9421A0D01D1B14F8004046C0 /* StepperView.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		94A411B41D1B6C4500D67F32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +170,7 @@
 			files = (
 				9421A0C51D1B02C1004046C0 /* LaunchScreen.storyboard in Resources */,
 				9421A0C21D1B02C1004046C0 /* Assets.xcassets in Resources */,
+				94A411B11D1B6C2B00D67F32 /* StepperView.xib in Resources */,
 				9421A0C01D1B02C1004046C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +336,7 @@
 				9421A0CB1D1B02C1004046C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
