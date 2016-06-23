@@ -8,17 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StepperView : UIView
+@protocol StepperViewDelegate <NSObject>
+
+- (void) stepperViewCurrentCount: (int) count;
+
+@end
+
 
 IB_DESIGNABLE
+@interface StepperView : UIView
 
-@property (nonatomic) int minimumStepperValue;
-@property (nonatomic) int maximumStepperValue;
-@property (nonatomic) NSString *leftButtonTitle;
-@property (nonatomic) NSString *rightButtonTitle;
+@property (nonatomic) IBInspectable int minimumStepperValue;
+@property (nonatomic) IBInspectable int maximumStepperValue;
+@property (nonatomic) IBInspectable NSString *leftButtonTitle;
+@property (nonatomic) IBInspectable  NSString *rightButtonTitle;
 @property (nonatomic) IBInspectable float leftButtonRoundedCorner;
 @property (nonatomic) IBInspectable float rightButtonRoundedCorner;
-
+@property id<StepperViewDelegate> delegate;
 
 - (instancetype) initWithFrame:(CGRect)frame withMinimumValue: (int) minimumValue andMaximumValue: (int) maximumValue;
 - (instancetype) initWithFrame:(CGRect)frame withLeftButtonTitle: (NSString *) leftButtonTitle andRightButtonTitle: (NSString *) rightButtonTitle;
