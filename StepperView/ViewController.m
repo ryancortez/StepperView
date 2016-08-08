@@ -20,16 +20,14 @@
     // Create a custom stepperView and place it in the center of the main view
     StepperView *stepperView = [[StepperView alloc]initWithFrame:CGRectMake(0, 0, 200, 50)];
     stepperView.delegate = self;
+    
+    // The maximum value that view can be set to is 10, the minmum is 0
     stepperView.minimumStepperValue = 0.0;
     stepperView.maximumStepperValue = 10.0;
     stepperView.leftButtonRoundedCorner = 20.0;
     stepperView.rightButtonRoundedCorner = 20.0;
     stepperView.center = self.view.center;
     [self.view addSubview:stepperView];
-}
-
-- (void)stepperViewCurrentCount:(int) count {
-    NSLog(@"%d", count);
 }
 
 @end

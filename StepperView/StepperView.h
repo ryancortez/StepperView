@@ -10,8 +10,6 @@
 
 @protocol StepperViewDelegate <NSObject>
 
-- (void) stepperViewCurrentCount: (int) count;
-
 @end
 
 

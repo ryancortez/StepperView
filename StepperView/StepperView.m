@@ -126,16 +126,14 @@
 
 - (IBAction)leftButtonPress:(UIButton *)button {
     if (stepperViewLabel.text.integerValue > _minimumStepperValue) {
-        stepperViewLabel.text = [NSString stringWithFormat:@"%ld", (stepperViewLabel.text.integerValue - 1)];
+        stepperViewLabel.text = [NSString stringWithFormat:@"%d", (stepperViewLabel.text.integerValue - 1)];
     }
-    [self.delegate stepperViewCurrentCount:(int) stepperViewLabel.text.integerValue];
 }
 
 - (IBAction)rightButtonPress:(UIButton *)button {
     if (stepperViewLabel.text.integerValue < _maximumStepperValue) {
-        stepperViewLabel.text = [NSString stringWithFormat:@"%ld", (stepperViewLabel.text.integerValue + 1)];
+        stepperViewLabel.text = [NSString stringWithFormat:@"%d", (stepperViewLabel.text.integerValue + 1)];
     }
-    [self.delegate stepperViewCurrentCount:(int) stepperViewLabel.text.integerValue];
 }
 
 @end
